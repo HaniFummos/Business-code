@@ -11,7 +11,7 @@ import pdfplumber
 from bert_score import BERTScorer
 from dotenv import load_dotenv
 from pathlib import Path
-from Persona import generate_summary
+from Retcon import generate_summary
 #    ^input^ one of these prompting strategy files: BasePrompt Persona StaticExemplars Retcon RetconPos
 
 env_path = Path(__file__).parent / ".env"
