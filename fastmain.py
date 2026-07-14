@@ -11,8 +11,8 @@ from tkinter import filedialog, Tk
 import pdfplumber
 from dotenv import load_dotenv
 from pathlib import Path
-from memory import generate_summary
-#    ^input^ one of these prompting strategy files: fewshot persona zeroshot memory memorypos
+from Retcon import generate_summary
+#    ^input^ one of these prompting strategy files: BasePrompt Persona StaticExemplars Retcon RetconPos
 
 env_path = Path(__file__).parent / ".env"
 load_dotenv(dotenv_path=env_path)
